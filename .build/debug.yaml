@@ -1,0 +1,65 @@
+client:
+  name: basic
+tools: {}
+targets:
+  "main": ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.swiftmodule","<CTimeCode-debug.module>"]
+  "test": ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.swiftmodule","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodePackageTests.xctest/Contents/MacOS/CTimeCodePackageTests","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.swiftmodule","<CTimeCode-debug.module>","<CTimeCodePackageTests-debug.test>","<CTimeCodeTests-debug.module>"]
+  "CTimeCode-debug.module": ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.swiftmodule","<CTimeCode-debug.module>"]
+  "CTimeCodePackageTests-debug.test": ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodePackageTests.xctest/Contents/MacOS/CTimeCodePackageTests","<CTimeCodePackageTests-debug.test>"]
+  "CTimeCodeTests-debug.module": ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.swiftmodule","<CTimeCodeTests-debug.module>"]
+default: "main"
+commands: 
+  "<C.CTimeCode-debug.module>":
+    tool: phony
+    inputs: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.swiftmodule"]
+    outputs: ["<CTimeCode-debug.module>"]
+
+  "<C.CTimeCodePackageTests-debug.test>":
+    tool: phony
+    inputs: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodePackageTests.xctest/Contents/MacOS/CTimeCodePackageTests"]
+    outputs: ["<CTimeCodePackageTests-debug.test>"]
+
+  "<C.CTimeCodeTests-debug.module>":
+    tool: phony
+    inputs: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.swiftmodule"]
+    outputs: ["<CTimeCodeTests-debug.module>"]
+
+  "C.CTimeCode-debug.module":
+    tool: swift-compiler
+    executable: "/Users/yen/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "CTimeCode"
+    module-output-path: "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.swiftmodule"
+    inputs: ["/Users/yen/CTimeCode/Sources/CTimeCode/CTimeCode.swift","/Users/yen/CTimeCode/Sources/CTimeCode/CTimeCodeFunc.swift"]
+    outputs: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCode.swift.o","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCodeFunc.swift.o","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.swiftmodule"]
+    import-paths: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build"
+    objects: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCode.swift.o","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCodeFunc.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-color-diagnostics"]
+    sources: ["/Users/yen/CTimeCode/Sources/CTimeCode/CTimeCode.swift","/Users/yen/CTimeCode/Sources/CTimeCode/CTimeCodeFunc.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "C.CTimeCodePackageTests-debug.test":
+    tool: shell
+    description: "Linking ./.build/x86_64-apple-macosx/debug/CTimeCodePackageTests.xctest/Contents/MacOS/CTimeCodePackageTests"
+    inputs: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCode.swift.o","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCodeFunc.swift.o","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.build/CTimeCodeTests.swift.o","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.build/XCTestManifests.swift.o"]
+    outputs: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodePackageTests.xctest/Contents/MacOS/CTimeCodePackageTests"]
+    args: ["/Users/yen/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-sdk","/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-g","-L","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug","-o","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodePackageTests.xctest/Contents/MacOS/CTimeCodePackageTests","-module-name","CTimeCodePackageTests","-Xlinker","-bundle","@/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodePackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Users/yen/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx","-target","x86_64-apple-macosx10.10","-L","/Users/yen/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"]
+
+  "C.CTimeCodeTests-debug.module":
+    tool: swift-compiler
+    executable: "/Users/yen/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    module-name: "CTimeCodeTests"
+    module-output-path: "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.swiftmodule"
+    inputs: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.swiftmodule","/Users/yen/CTimeCode/Tests/CTimeCodeTests/CTimeCodeTests.swift","/Users/yen/CTimeCode/Tests/CTimeCodeTests/XCTestManifests.swift"]
+    outputs: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.build/CTimeCodeTests.swift.o","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.build/XCTestManifests.swift.o","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.swiftmodule"]
+    import-paths: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug"]
+    temps-path: "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.build"
+    objects: ["/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.build/CTimeCodeTests.swift.o","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCodeTests.build/XCTestManifests.swift.o"]
+    other-args: ["-target","x86_64-apple-macosx10.10","-swift-version","5","-enable-batch-mode","-index-store-path","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/index/store","-sdk","/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk","-F","/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Onone","-g","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-color-diagnostics"]
+    sources: ["/Users/yen/CTimeCode/Tests/CTimeCodeTests/CTimeCodeTests.swift","/Users/yen/CTimeCode/Tests/CTimeCodeTests/XCTestManifests.swift"]
+    is-library: true
+    enable-whole-module-optimization: false
+    num-threads: "8"
+

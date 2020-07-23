@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "4db67691b6958219ac2aa8c46535c6dc"
+build_time: [1595476805, 585438000]
+inputs:
+  "/Users/yen/CTimeCode/Sources/CTimeCode/CTimeCode.swift": [1595475652, 111478708]
+  "/Users/yen/CTimeCode/Sources/CTimeCode/CTimeCodeFunc.swift": [1595476802, 467899164]

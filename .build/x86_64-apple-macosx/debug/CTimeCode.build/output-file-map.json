@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/master.swiftdeps"
+  },
+  "/Users/yen/CTimeCode/Sources/CTimeCode/CTimeCode.swift": {
+    "dependencies": "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCode.d",
+    "object": "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCode.swift.o",
+    "swiftmodule": "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCode~partial.swiftmodule",
+    "swift-dependencies": "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCode.swiftdeps"
+  },
+  "/Users/yen/CTimeCode/Sources/CTimeCode/CTimeCodeFunc.swift": {
+    "dependencies": "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCodeFunc.d",
+    "object": "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCodeFunc.swift.o",
+    "swiftmodule": "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCodeFunc~partial.swiftmodule",
+    "swift-dependencies": "/Users/yen/CTimeCode/.build/x86_64-apple-macosx/debug/CTimeCode.build/CTimeCodeFunc.swiftdeps"
+  }
+}
