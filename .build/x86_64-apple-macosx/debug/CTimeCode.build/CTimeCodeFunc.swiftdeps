@@ -7,16 +7,22 @@ provides-member:
 - ["9CTimeCode0aB4FuncC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "??"
 - "AssignmentPrecedence"
 - "CTimeCode"
 - "CTimeCodeFunc"
+- "String"
+- !private "StringLiteralType"
 depends-member:
-- !private ["9CTimeCodeAAV", "init"]
+- ["9CTimeCodeAAV", "init"]
+- !private ["9CTimeCodeAAV", "text"]
 - ["9CTimeCode0aB4FuncC", "CTimeCode"]
+- ["9CTimeCode0aB4FuncC", "String"]
 - ["9CTimeCode0aB4FuncC", "init"]
 - ["9CTimeCode0aB4FuncC", "ptr"]
+- ["9CTimeCode0aB4FuncC", "test"]
 depends-nominal:
-- !private "9CTimeCodeAAV"
+- "9CTimeCodeAAV"
 - "9CTimeCode0aB4FuncC"
 depends-dynamic-lookup:
 depends-external:
@@ -44,4 +50,4 @@ depends-external:
 - "/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/shims/RefCount.h"
 - "/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/shims/Visibility.h"
 - "/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/shims/module.modulemap"
-interface-hash: "d0574a195e6267bbf8c97381ab7f7ee7"
+interface-hash: "fb7fd4f66aa0108069c3c0652b7e1e0e"
