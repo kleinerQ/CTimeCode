@@ -7,4 +7,8 @@ public class CTimeCodeFunc {
         self.ptr = CTimeCode()
     }
   
+    // Add "value" inside the bitmap
+    public func test()->String {
+        return self.ptr.text
+    }
 }
