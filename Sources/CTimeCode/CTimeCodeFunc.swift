@@ -9,6 +9,6 @@ public class CTimeCodeFunc {
   
     // Add "value" inside the bitmap
     public func test()->String {
-        return self.ptr.text
+        return self.ptr?.text ?? ""
     }
 }
