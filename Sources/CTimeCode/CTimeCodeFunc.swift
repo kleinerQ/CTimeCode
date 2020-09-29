@@ -4,7 +4,7 @@ public class CTimeCodeFunc {
 
     // Creates a new bitmap (initially empty)
     public init() {
-        self.ptr = Cltc.ltc_decoder_create(20,20)
+        self.ptr = CTimeCode.ltc_decoder_create(20,20)
     }
   
 //    // Add "value" inside the bitmap

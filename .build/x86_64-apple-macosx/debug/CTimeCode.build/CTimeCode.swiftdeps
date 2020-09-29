@@ -8,10 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "CTimeCode"
-- "LTCEncoder"
 - "StringLiteralType"
 depends-member:
-- ["9CTimeCodeAAV", "LTCEncoder"]
 - ["9CTimeCodeAAV", "init"]
 - ["9CTimeCodeAAV", "text"]
 depends-nominal:
@@ -42,4 +40,4 @@ depends-external:
 - "/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/shims/RefCount.h"
 - "/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/shims/Visibility.h"
 - "/Users/yen/Desktop/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/swift/shims/module.modulemap"
-interface-hash: "d34c5d969a49f13e5058d366e52e3f3b"
+interface-hash: "c592c1f23039f4b942487c6a600f4c2e"
